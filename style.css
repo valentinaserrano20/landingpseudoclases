@@ -3,13 +3,12 @@
     margin:0;
     box-sizing: border-box;
 }
+:root{
+    --color:#1fa667;
+}
 
 body{
     background-color: var(--color);
-}
-
-:root{
-    --color:#1fa667;
 }
 
 .contenedor_principal{
@@ -55,9 +54,14 @@ body{
     display: inline-block;
     margin-left: 50px;
     margin-top: 22px;
-    color: #022723
+    color: #011d1a
 }
+
+.horizontal i{
+    color:var(--color)
+}
+
 .box_fondo{
     background-image:url(imagenes/dental.png);
-    background-color: #0227235b;
+    background-color: #022723a4;
 }
