@@ -3,25 +3,31 @@
     margin:0;
     box-sizing: border-box;
 }
+
 body{
     background-color: var(--color);
 }
+
 :root{
     --color:#1fa667;
 }
-.contenedor_main{
-    display: block;
+
+.contenedor_principal{
+    width: 100%;
 }
+
 .box_vertical{
     background-color: #022723;
     width: 50px;
     height: 400px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 3rem;
+    margin-left: 300px;
+    position: relative;
 }
 
 .box_vertical i{
-    margin-top: 15px;
+    margin-top: 18px;
     font-size: 20px;
     color: var(--color);
 }
@@ -32,6 +38,26 @@ body{
 
 .container{
     background-color: #E4F2E9;
-    width: 600px;
+    width: 700px;
     height: 400px;
+    margin-top: 3rem;
+    margin-left: -3px;
+    box-shadow: -30px 10px 10px rgba(43, 42, 42, 0.5);
+}
+
+.box_vertical,
+.container {
+  display: inline-block;
+  vertical-align: middle;
+}
+.horizontal a{
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 22px;
+    color: #022723
+}
+.box_fondo{
+    background-image:url(imagenes/dental.png);
+    background-color: #0227235b;
 }
