@@ -180,15 +180,16 @@ body{
     font-size: 25px;
 }
 form{
-    margin-top: 30px;
+    margin-top: 25px;
     font-size: 13px;
     color:#575857;
     margin-left: 40px;
 }
 
-input{
+.columna input{
     background-color: #f2f2f2;
     margin-top: 5px;
+    margin-bottom: 7px;
     border: 1px solid #f2f2f2;
     border-radius: 50px;
     height: 30px;
@@ -196,18 +197,46 @@ input{
     font-style: italic;
     font-weight: 400;
     padding-left: 12px;
+    font-size: 11px;
+    color: #575857;
 }
+
 
 .columna {
   display: inline-block;
   width: 44%; 
-  margin-right: 20px; 
-  vertical-align: top;   
+  margin-right: 20px;   
 }
 
-.columna label {
-  display: inline-block;
-  margin-bottom: 5px;
-  font-size: 14px;
+.fila input{
+    background-color: #f2f2f2;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50px;
+    height: 30px;
+    width: 340px;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: 12px;
+    font-size: 11px;
 }
 
+.fila{
+    width: 50%; 
+    margin-right: 20px;   
+}
+
+.boton_book2{
+    background-color: var(--color);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid var(--color);
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-left: 150px;
+    width: 120px;
+    padding-left: 5px;
+    height: 30px;
+}
