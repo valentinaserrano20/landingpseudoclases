@@ -14,7 +14,7 @@ body{
 }
 
 .contenedor_principal{               
-    max-width: 1600px;
+    max-width: 100%;
     padding: 1rem;
 }
 
@@ -24,7 +24,7 @@ body{
     height: 80vh;                   
     text-align: center;              
     margin-top: 2rem;                
-    margin-left: 7.5rem;              
+    margin-left: 4rem;              
     position: relative;              
 }
 
@@ -35,12 +35,12 @@ body{
 }
 
 .box_vertical .icon:first-child{     
-    margin-bottom: 210px;
+    margin-bottom: 13rem;
 }
 
 .container{
     background-color: #E4F2E9;
-    width: 170vh;
+    width: 150vh;
     height: 80vh;
     margin-top: 2rem;
     margin-left: -0.5rem;
@@ -49,16 +49,16 @@ body{
 
 .box_vertical,
 .container {
-  display: inline-block;
-  vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 .horizontal a{
     text-decoration: none;
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 3rem;
     margin-top: 22px;
     color: #011d1a;
-    margin-right: 68px;
+    margin-right: 2.7rem;
     font-size: 17px;
     position: static;
 }
@@ -70,12 +70,11 @@ body{
 .horizontal a.whatsapp{
     color: var(--color);
     font-weight: bold;
-    margin-left: 50px;
 }
 
 .horizontal a.whatsapp i {
-  margin-right: 6px; 
-  font-size: 25px;
+    margin-right: 6px; 
+    font-size: 25px;
 }
 
 .box_fondo,
@@ -98,11 +97,11 @@ body{
 }
 
 .titulo_caja1{
-    font-size: 35px;
+    font-size: 2rem;
     font-weight: bold;
     color: white;
-    margin-top: 60px;
-    line-height: 40px;
+    margin-top: 5rem;
+    line-height: 2.2rem;
 }
 
 .color-distinto{
@@ -111,19 +110,23 @@ body{
 
 .contenido_caja1{
     color: white;
-    font-size: 10px;
-    line-height: 20px;
+    font-size: 0.6rem;
+    line-height: 1.2rem;
     font-weight: 200;
+}
+
+.botones_caja1{
+    margin-top: -1rem;
+    position: static;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .boton_book{
     background-color: var(--color);
     color: white;
-    font-weight: 700;
-    font-size: 15px;
     border: 1px solid var(--color);
     border-radius: 50px;
-    margin-top: 20px;
     width: 120px;
     padding-left: 5px;
     height: 30px;
@@ -136,8 +139,6 @@ body{
 .boton_read{
     background-color: transparent;
     color: var(--color);
-    font-weight: 700;
-    font-size: 15px;
     border: 2px solid var(--color);
     border-radius: 50px;
     margin-top: 20px;
@@ -158,12 +159,12 @@ body{
 }
 
 .punto {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
-  background-color: rgba(65, 64, 64, 0.445);
-  border-radius: 50%;
+    display: inline-block;
+    width: 4%;
+    height: 0.7rem;
+    margin: 0 5px;
+    background-color: rgba(65, 64, 64, 0.445);
+    border-radius: 50%;
 }
 .punto.activo{
     background-color: rgba(240, 248, 255, 0.781);
@@ -177,54 +178,62 @@ body{
     text-align: center;
     color: var(--color);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 form{
-    margin-top: 25px;
-    font-size: 13px;
-    color:#575857;
-    margin-left: 40px;
+    margin-top: 4%;
+    font-size: 0.8rem;
+    color:#575857dc;
+    margin-left: 1.5rem;
+}
+.columna {
+    display: inline-block;
+    width: 40%; 
+    margin-right: 2rem;   
+}
+input{
+    height: 1.7rem;
+    margin-top: 2%;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    font-weight: 400;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    padding-left: 1rem;
+    transition: all 1s;
+}
+
+input:hover:valid{
+    border: 2px solid green; 
+    background-color: #f2f2f2;
+}
+
+input:hover:invalid{
+    border: 2px solid #dc3545;
+    background-color: #ffe6e6;
+}
+
+label::after {
+    content: " *";
+    color: red;
+    font-weight: bold;
 }
 
 .columna input{
-    background-color: #f2f2f2;
-    margin-top: 5px;
-    margin-bottom: 7px;
-    border: 1px solid #f2f2f2;
     border-radius: 50px;
-    height: 30px;
-    width: 150px;
-    font-style: italic;
-    font-weight: 400;
-    padding-left: 12px;
     font-size: 11px;
-    color: #575857;
-}
-
-
-.columna {
-  display: inline-block;
-  width: 44%; 
-  margin-right: 20px;   
+    color: #575857a9;
+    width: 9rem;
 }
 
 .fila input{
-    background-color: #f2f2f2;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #f2f2f2;
     border-radius: 50px;
-    height: 30px;
-    width: 340px;
-    font-style: italic;
-    font-weight: 400;
-    padding-left: 12px;
+    width: 20rem;
     font-size: 11px;
 }
 
 .fila{
-    width: 50%; 
-    margin-right: 20px;   
+    width: 70%; 
 }
 
 .boton_book2{
@@ -234,9 +243,9 @@ form{
     font-size: 15px;
     border: 1px solid var(--color);
     border-radius: 50px;
-    margin-top: 15px;
-    margin-left: 150px;
-    width: 120px;
-    padding-left: 5px;
+    margin-top: 1rem;
+    margin-left: 7.5rem;
+    width: 8rem;
     height: 30px;
+    position: static;
 }
