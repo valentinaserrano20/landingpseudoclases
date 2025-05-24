@@ -1,46 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-     padding: 0;                      /*aqui restablecemos los valores que trae el navegador*/
+    padding: 0;                      
     margin:0;
     box-sizing: border-box;
 }
 :root{
-    --color:#1fa667;                /*como hay colores que se usan mas de una vez en este caso el de los iconos creamos una custom properties*/
+    --color:#1fa667;                
 }
 
 body{
-    background-color: var(--color);   /*Agregamos un color de fondo segun el estilo dado*/
+    background-color: var(--color);  
+    font-family: "Roboto", sans-serif; 
 }
 
-.contenedor_principal{                /*decimos a nuestro contenedor de todas las cajas que ocupe el 100 del ancho*/
-    width: 100%;
+.contenedor_principal{               
+    max-width: 1600px;
+    padding: 1rem;
 }
 
-.box_vertical{                       /*navegacion vertical*/
-    background-color: #022723;     /*Agregamos un color de fondo segun el estilo dado*/
-    width: 60px;                     /*le damos el ancho de la barra de navegacion vertical*/
-    height: 500px;                   /*le damos el alto de la barra de navegacion vertical*/
-    text-align: center;              /*como usamos la etiquetas i que en primera instancia es para estilizar el texto, sus iconos insertados con esta eqtieuta se podran estilizar como un texto, entonces los ajustamos al medio*/
-    margin-top: 3rem;                /*le damos un margen hacia abajo del navegador para que se vea en el centro*/
-    margin-left: 150px;              /*al igual que arriba, le damos un margen pero para que su coordenada x se ubbique en el centro o una aproximacion a ello*/
-    position: relative;              /*le di una posicion relativa para que el elemento siga en el lugar inicial pero se superponga un poco del container para que no se vea afectado por el box shadow añadido en la parte de abajo*/
+.box_vertical{                       
+    background-color: #022723;     
+    width: 5%;                    
+    height: 80vh;                   
+    text-align: center;              
+    margin-top: 2rem;                
+    margin-left: 7.5rem;              
+    position: relative;              
 }
 
-.box_vertical i{                     /*iconos dentro de la navegacion vertical*/
-    margin-top: 25px;                /*le damos un margen arriba de ellos para que se separen*/
-    font-size: 25px;                 /*como ya habiamos hablado de las etiquetas i, le agrandamos la letra o el tamaño en este caso para que se vea mejor*/
-    color: var(--color);             /*y le agregamos el color que nos da la pagina*/
+.box_vertical i{                     
+    margin-top: 25px;                
+    font-size: 25px;                 
+    color: var(--color);             
 }
 
-.box_vertical .icon:first-child{     /*primer icono de la navegacion vertical*/
-    margin-bottom: 220px;
+.box_vertical .icon:first-child{     
+    margin-bottom: 210px;
 }
 
 .container{
     background-color: #E4F2E9;
-    width: 1000px;
-    height: 500px;
-    margin-top: 3rem;
-    margin-left: -3px;
+    width: 170vh;
+    height: 80vh;
+    margin-top: 2rem;
+    margin-left: -0.5rem;
     box-shadow: -30px 15px 10px rgba(43, 42, 42, 0.5);
 }
 
@@ -55,18 +58,23 @@ body{
     margin-left: 50px;
     margin-top: 22px;
     color: #011d1a;
-    margin-right: 65px;
-    font-size: 18px;
+    margin-right: 68px;
+    font-size: 17px;
 }
 
 .horizontal i{
     color:var(--color)
 }
 
-.whatsapp{
-    font-weight: bold;
+.horizontal a.whatsapp{
     color: var(--color);
-    font-size: 19px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.horizontal a.whatsapp i {
+  margin-right: 6px; 
+  font-size: 25px;
 }
 
 .box_fondo,
@@ -75,21 +83,77 @@ body{
     vertical-align: middle;
     width: 45%;
     height: 80%;
-    margin-top: 20px;
-    box-shadow: 0px 0px 20px rgba(46, 45, 45, 0.5);
+    margin-top: 1.3rem;
+    box-shadow: 0px 10px 20px rgba(46, 45, 45, 0.5);
 }
 
 .box_fondo{
-    background-image:url(imagenes/dental.png);
-    background-color: #022723a4;
+    background-image:linear-gradient( #033a33b0,#02272393),url(imagenes/dental.png);
     background-position: center;
     background-size: cover;
     margin-left: 3rem;
-    padding: 50px;
+    padding: 3rem;
     
+}
+
+.titulo_caja1{
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    margin-top: 60px;
+    line-height: 40px;
+}
+
+.color-distinto{
+    color:var(--color);
+}
+
+.contenido_caja1{
+    color: white;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.boton_book{
+    background-color: var(--color);
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    border: 1px solid var(--color);
+    border-radius: 50px;
+    margin-top: 20px;
+    width: 120px;
+    padding-left: 5px;
+    height: 30px;
+}
+
+.icono_blanco{
+    color: white;
+}
+
+.boton_read{
+    background-color: transparent;
+    color: var(--color);
+    font-weight: 700;
+    font-size: 15px;
+    border: 2px solid var(--color);
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 120px;
+    padding-left: 5px;
+    height: 30px;
+
+}
+
+.icono_verde{
+    background-color: white;
+    border-radius: 100%;
 }
 
 .box_form{
     background-color: aliceblue;
-    margin-left: -3px;
+    margin-left: -0.2rem;
+    
 }
