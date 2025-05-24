@@ -60,6 +60,7 @@ body{
     color: #011d1a;
     margin-right: 68px;
     font-size: 17px;
+    position: static;
 }
 
 .horizontal i{
@@ -144,7 +145,6 @@ body{
     width: 120px;
     padding-left: 5px;
     height: 30px;
-
 }
 
 .icono_verde{
@@ -152,8 +152,62 @@ body{
     border-radius: 100%;
 }
 
-.box_form{
-    background-color: aliceblue;
-    margin-left: -0.2rem;
-    
+.indicador{
+    text-align: center;
+    margin-top: 1rem;
 }
+
+.punto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: rgba(65, 64, 64, 0.445);
+  border-radius: 50%;
+}
+.punto.activo{
+    background-color: rgba(240, 248, 255, 0.781);
+}
+.box_form{
+    background-color: white;
+    margin-left: -0.2rem; 
+    padding: 1.5rem; 
+}
+.titulo_caja2{
+    text-align: center;
+    color: var(--color);
+    font-weight: bold;
+    font-size: 25px;
+}
+form{
+    margin-top: 30px;
+    font-size: 13px;
+    color:#575857;
+    margin-left: 40px;
+}
+
+input{
+    background-color: #f2f2f2;
+    margin-top: 5px;
+    border: 1px solid #f2f2f2;
+    border-radius: 50px;
+    height: 30px;
+    width: 150px;
+    font-style: italic;
+    font-weight: 400;
+    padding-left: 12px;
+}
+
+.columna {
+  display: inline-block;
+  width: 44%; 
+  margin-right: 20px; 
+  vertical-align: top;   
+}
+
+.columna label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
