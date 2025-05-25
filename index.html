@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/7fb5ff4237.js" crossorigin="anonymous"></script>
-    <title>Landing</title>
+    <script src="https://kit.fontawesome.com/7fb5ff4237.js" crossorigin="anonymous"></script>     <!-- se inserta un script para poder ingresar los iconos desde fontawesome-->
+    <title>LandingPseudoclases</title>
 </head>
 <body>
-    <div class="contenedor_principal">
-        <nav class="box_vertical">
-            <div class="icon">
-            <i class="fa-solid fa-house"></i>
+    <div class="contenedor_principal">           <!-- creamos un contenedor general para el contenido-->
+        <nav class="box_vertical">               <!-- aqui tenemos la barra de navegacion vertical tambien es equivalente a un header -->
+            <div class="icon">                   <!-- creamos una caja general para los iconos, ene sta le cambiaremos el tamaño y su posicion -->
+            <i class="fa-solid fa-house"></i>    <!--los iconos se importan desde etiquetas i, estos gracias a esta etiqueta se pueden trabajar como su fueran texto  -->
             </div>
             <div class="icon">
             <i class="fa-brands fa-twitter"></i>
@@ -26,24 +26,24 @@
             </div>   
         </nav>
 
-        <div class="container">
-            <nav class="horizontal">
-                <a href="#inicio">Home</a>
+        <div class="container">                   <!--creamos una caja general que sera para el contenido de al lado de la barra de navegacion vertical y sus dos cajas de contenido interior -->
+            <nav class="horizontal">              <!--aqui creamos un menu de navegacion pero horizontal  -->
+                <a href="#inicio">Home</a>        <!--para que se ajusten en linea usamos la etiqueta a, simulando o llevandolos a la realidad ya que estos son links-->
                 <a href="#nosotros">About Us</a>
                 <a href="#reservas">Appoiment</a>
                 <a href="contacto">Contact</a>
-                <a href="wsp" class="whatsapp">
+                <a href="wsp" class="whatsapp">   <!--a diferencia de lso anteriores y como hablabmos al principio, este link tendra una etiqueta i con un icono de contacto  -->
                     <i class="fa-brands fa-whatsapp"></i>(+605)123456789
                 </a>
             </nav>
-            <div class="box_fondo">
-                <div class="titulo_caja1">
+            <div class="box_fondo">               <!--creamos la primera caja de contenido que es nuestra descripcion de la biblioteca, en esta va una imagen y distintos elementos-->
+                <div class="titulo_caja1">        <!--este es su titulo  -->
                     <p>Full Dedicated <br> To Your <br> <span class="color-distinto">Dental Health.</span></p>
                 </div>
-                <div class="contenido_caja1">
+                <div class="contenido_caja1">     <!--Contenido  -->
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque vitae illum aspernatur voluptatem minima, quaerat corporis nisi nam modi ut reiciendis! Accusamus praesentium reiciendis expedita incidunt ducimus eaque obcaecati fuga.</p>
                 </div>
-                <div class="botones_caja1">
+                <div class="botones_caja1">       <!--aqui creamos dos botones clickqueables los cuales nos sirven para mostrar si quiere leer su libro o informacion sobre el mismo-->
                     <button class="boton_book">
                         Book now
                         <span class="icono_blanco">
@@ -57,7 +57,7 @@
                         </span>
                     </button>
                 </div>
-                <section class="indicador">
+                <section class="indicador">       <!--Como la primera caja es informativa, tiene pestañas que conducen a distintas representaciones de libros, en este caso estos son los indicadores de ello-->
                     <div class="punto activo"></div>
                     <div class="punto"></div>
                     <div class="punto"></div>
@@ -65,14 +65,15 @@
                     <div class="punto"></div>
                 </section>
             </div>
-            <div class="box_form">
-                <div class="titulo_caja2">
-                    Book an Appointment
+
+            <div class="box_form">                <!--Aqui creamos la segunda caja de contenido-->         
+                <div class="titulo_caja2">        <!-- titulo introductorio -->
+                    <p>Book an Appointment</p>
                 </div>
                 <form>
-                    <div class="columna">
-                        <label for="name">First Name:</label>
-                        <input type="text" placeholder="Your first name" required>
+                    <div class="columna">         <!--aqui decimos cuales van de a dos o de a uno dependiendo la distribucion del mismo-->
+                        <label for="name">First Name:</label>   <!--usamos un label para que el usuario tenga idea de que es lo que va a ingresar-->
+                        <input type="text" placeholder="Your first name" required>  <!--En este campo se ingresan los datos-->
                     </div>
                     <div class="columna">
                         <label for="last_name">Last Name:</label>
@@ -95,7 +96,7 @@
                         <input type="time" placeholder="Appoimenttime*" required>
                     </div>
                 </form>
-                <button class="boton_book2">
+                <button class="boton_book2">     <!--como ultima observacion se crea un boton de enviado, en este caso se alerta al usuario que la reserva se realizo correctamente-->
                     Book now
                     <span class="icono_blanco">
                         <i class="fa-solid fa-circle-play"></i>

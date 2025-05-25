@@ -1,251 +1,298 @@
+/* Importamos la fuente Roboto desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Establecemos estilos globales para todos los elementos */
 *{
-    padding: 0;                      
-    margin:0;
-    box-sizing: border-box;
+    padding: 0;                      /* Quitamos el espacio interno por defecto */
+    margin:0;                        /* Quitamos los márgenes por defecto */
+    box-sizing: border-box;         /* Incluye el padding y borde en el tamaño total del elemento */
 }
+
+/* Declaramos variables CSS globales */
 :root{
-    --color:#1fa667;                
+    --color:#1fa667;                /* Definimos el color principal como variable reutilizable */
 }
 
+/* Estilo del cuerpo de la página */
 body{
-    background-color: var(--color);  
-    font-family: "Roboto", sans-serif; 
+    background-color: var(--color);  /* Aplicamos el color de fondo definido en la variable */
+    font-family: "Roboto", sans-serif; /* Usamos la fuente Roboto como principal */
 }
 
+/* Contenedor principal de toda la estructura */
 .contenedor_principal{               
-    max-width: 100%;
-    padding: 1rem;
+    max-width: 100%;                 /* Ancho máximo completo */
+    padding: 1rem;                   /* Espaciado interno uniforme */
 }
 
+/* Barra lateral vertical de navegación */
 .box_vertical{                       
-    background-color: #022723;     
-    width: 5%;                    
-    height: 80vh;                   
-    text-align: center;              
-    margin-top: 2rem;                
-    margin-left: 4rem;              
-    position: relative;              
+    background-color: #022723;      /* Fondo verde oscuro */
+    width: 5%;                      /* Ancho estrecho de la barra */
+    height: 80vh;                   /* Altura del 80% del alto de la ventana */
+    text-align: center;             /* Centrado de texto e íconos horizontal */
+    margin-top: 2rem;               /* Margen superior */
+    margin-left: 4rem;              /* Separación lateral izquierda */
+    position: relative;             /* Posicionamiento relativo para organización */
 }
 
-.box_vertical i{                     
-    margin-top: 25px;                
-    font-size: 25px;                 
-    color: var(--color);             
+/* Estilos para todos los íconos dentro de la barra vertical */
+.box_vertical i{                    
+    margin-top: 25px;               /* Espacio superior entre íconos */
+    font-size: 25px;                /* Tamaño del ícono */
+    color: var(--color);            /* Color del ícono igual al principal */
 }
 
-.box_vertical .icon:first-child{     
-    margin-bottom: 13rem;
+/* Primer ícono con margen inferior adicional para separación visual */
+.box_vertical .icon:first-child{    
+    margin-bottom: 13rem;           /* Espacio inferior adicional */
 }
 
+/* Contenedor principal del contenido horizontal al lado de la barra */
 .container{
-    background-color: #E4F2E9;
-    width: 150vh;
-    height: 80vh;
-    margin-top: 2rem;
-    margin-left: -0.5rem;
-    box-shadow: -30px 15px 10px rgba(43, 42, 42, 0.5);
+    background-color: #E4F2E9;      /* Fondo claro verdoso */
+    width: 150vh;                   /* Ancho relativo a la altura del viewport */
+    height: 80vh;                   /* Misma altura que la barra lateral */
+    margin-top: 2rem;               /* Separación superior */
+    margin-left: -0.5rem;           /* Ligeramente a la izquierda para empalme */
+    box-shadow: -30px 15px 10px rgba(43, 42, 42, 0.5); /* Sombra izquierda */
 }
 
+/* Establecemos alineación horizontal entre barra y contenedor */
 .box_vertical,
 .container {
-    display: inline-block;
-    vertical-align: middle;
+    display: inline-block;          /* Mostramos en línea */
+    vertical-align: middle;         /* Alineación vertical centrada */
 }
+
+/* Estilos para los enlaces del menú horizontal superior */
 .horizontal a{
-    text-decoration: none;
-    display: inline-block;
-    margin-left: 3rem;
-    margin-top: 22px;
-    color: #011d1a;
-    margin-right: 2.7rem;
-    font-size: 17px;
-    position: static;
+    text-decoration: none;         /* Sin subrayado */
+    display: inline-block;         /* Se comportan como cajas */
+    margin-left: 3rem;             /* Separación izquierda */
+    margin-top: 22px;              /* Separación superior */
+    color: #011d1a;                /* Color de texto */
+    margin-right: 2.7rem;          /* Separación entre enlaces */
+    font-size: 17px;               /* Tamaño del texto */
+    position: static;              /* Posición normal */
 }
 
+/* Color del ícono dentro del enlace */
 .horizontal i{
-    color:var(--color)
+    color:var(--color)             /* Mismo color que la variable */
 }
 
+/* Estilo especial para el enlace de WhatsApp */
 .horizontal a.whatsapp{
-    color: var(--color);
-    font-weight: bold;
+    color: var(--color);           /* Color destacado */
+    font-weight: bold;             /* Texto en negrita */
 }
 
+/* Ícono de WhatsApp con separación adicional */
 .horizontal a.whatsapp i {
-    margin-right: 6px; 
-    font-size: 25px;
+    margin-right: 6px;             /* Espacio entre ícono y texto */
+    font-size: 25px;               /* Tamaño del ícono */
 }
 
+/* Contenedor de imagen de fondo */
 .box_fondo,
 .box_form{
-    display: inline-block;
-    vertical-align: middle;
-    width: 45%;
-    height: 80%;
-    margin-top: 1.3rem;
-    box-shadow: 0px 10px 20px rgba(46, 45, 45, 0.5);
+    display: inline-block;         /* Elementos en línea */
+    vertical-align: middle;        /* Alineación vertical */
+    width: 45%;                    /* Ocupan el 45% del ancho */
+    height: 80%;                   /* Altura relativa al contenedor */
+    margin-top: 1.3rem;            /* Separación superior */
+    box-shadow: 0px 10px 20px rgba(46, 45, 45, 0.5); /* Sombra inferior */
 }
 
+/* Fondo con imagen y gradiente superpuesto */
 .box_fondo{
-    background-image:linear-gradient( #033a33b0,#02272393),url(imagenes/dental.png);
-    background-position: center;
-    background-size: cover;
-    margin-left: 3rem;
-    padding: 3rem;
-    
+    background-image:linear-gradient( #033a33b0,#02272393),url(imagenes/dental.png); /* Imagen con gradiente */
+    background-position: center;   /* Centrado de imagen */
+    background-size: cover;        /* Cubre todo el contenedor */
+    margin-left: 3rem;             /* Separación izquierda */
+    padding: 3rem;                 /* Espaciado interno */
 }
 
+/* Título grande en la caja de fondo */
 .titulo_caja1{
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    margin-top: 5rem;
-    line-height: 2.2rem;
+    font-size: 2rem;               /* Tamaño del texto */
+    font-weight: bold;             /* Negrita */
+    color: white;                  /* Color blanco */
+    margin-top: 5rem;              /* Espacio superior */
+    line-height: 2.2rem;           /* Espaciado entre líneas */
 }
 
+/* Palabras con color distinto para destacar */
 .color-distinto{
-    color:var(--color);
+    color:var(--color);            /* Color de la variable */
 }
 
+/* Texto descriptivo debajo del título */
 .contenido_caja1{
-    color: white;
-    font-size: 0.6rem;
-    line-height: 1.2rem;
-    font-weight: 200;
+    color: white;                  /* Color blanco */
+    font-size: 0.6rem;             /* Tamaño pequeño */
+    line-height: 1.2rem;           /* Espaciado entre líneas */
+    font-weight: 200;              /* Peso de fuente ligero */
 }
 
+/* Contenedor de los botones dentro de la caja */
 .botones_caja1{
-    margin-top: -1rem;
-    position: static;
-    font-size: 1rem;
-    font-weight: 700;
+    margin-top: -1rem;             /* Subimos un poco el grupo de botones */
+    position: static;              /* Posición estándar */
+    font-size: 1rem;               /* Tamaño de fuente */
+    font-weight: 700;              /* Fuente en negrita */
 }
 
+/* Botón "Book now" */
 .boton_book{
-    background-color: var(--color);
-    color: white;
-    border: 1px solid var(--color);
-    border-radius: 50px;
-    width: 120px;
-    padding-left: 5px;
-    height: 30px;
+    background-color: var(--color); /* Fondo verde */
+    color: white;                  /* Texto blanco */
+    border: 1px solid var(--color); /* Borde verde */
+    border-radius: 50px;           /* Bordes redondeados */
+    width: 120px;                  /* Ancho fijo */
+    padding-left: 5px;             /* Relleno izquierdo */
+    height: 30px;                  /* Altura del botón */
 }
 
+/* Ícono blanco para mantener contraste */
 .icono_blanco{
     color: white;
 }
 
+/* Botón "Read more" con estilo transparente */
 .boton_read{
-    background-color: transparent;
-    color: var(--color);
-    border: 2px solid var(--color);
-    border-radius: 50px;
-    margin-top: 20px;
-    margin-left: 10px;
-    width: 120px;
-    padding-left: 5px;
-    height: 30px;
+    background-color: transparent; /* Fondo transparente */
+    color: var(--color);           /* Texto verde */
+    border: 2px solid var(--color); /* Borde visible */
+    border-radius: 50px;           /* Bordes redondeados */
+    margin-top: 20px;              /* Separación superior */
+    margin-left: 10px;             /* Separación izquierda */
+    width: 120px;                  /* Ancho fijo */
+    padding-left: 5px;             /* Espaciado interno izquierdo */
+    height: 30px;                  /* Altura del botón */
 }
 
+/* Fondo blanco circular para ícono dentro del botón */
 .icono_verde{
     background-color: white;
     border-radius: 100%;
 }
 
+/* Contenedor de los puntos indicadores */
 .indicador{
-    text-align: center;
-    margin-top: 1rem;
+    text-align: center;            /* Centramos los puntos */
+    margin-top: 1rem;              /* Separación superior */
 }
 
+/* Estilo general de los puntos */
 .punto {
-    display: inline-block;
-    width: 4%;
-    height: 0.7rem;
-    margin: 0 5px;
-    background-color: rgba(65, 64, 64, 0.445);
-    border-radius: 50%;
+    display: inline-block;         /* En línea */
+    width: 4%;                     /* Ancho relativo */
+    height: 0.7rem;                /* Altura fija */
+    margin: 0 5px;                 /* Separación entre puntos */
+    background-color: rgba(65, 64, 64, 0.445); /* Color gris semitransparente */
+    border-radius: 50%;            /* Redondeados completamente */
 }
+
+/* Punto activo destacado con otro color */
 .punto.activo{
     background-color: rgba(240, 248, 255, 0.781);
 }
+
+/* Contenedor del formulario */
 .box_form{
-    background-color: white;
-    margin-left: -0.2rem; 
-    padding: 1.5rem; 
+    background-color: white;       /* Fondo blanco */
+    margin-left: -0.2rem;          /* Ajuste hacia la izquierda */
+    padding: 1.5rem;               /* Espaciado interno */
 }
+
+/* Título principal del formulario */
 .titulo_caja2{
-    text-align: center;
-    color: var(--color);
-    font-weight: bold;
-    font-size: 1.5rem;
+    text-align: center;            /* Centrado horizontal */
+    color: var(--color);           /* Color verde principal */
+    font-weight: bold;             /* Negrita */
+    font-size: 1.5rem;             /* Tamaño de fuente */
 }
+
+/* Estilos generales del formulario */
 form{
-    margin-top: 4%;
-    font-size: 0.8rem;
-    color:#575857dc;
-    margin-left: 1.5rem;
+    margin-top: 4%;                /* Separación superior */
+    font-size: 0.8rem;             /* Tamaño de fuente */
+    color:#575857dc;               /* Color gris oscuro */
+    margin-left: 1.5rem;           /* Separación desde la izquierda */
 }
+
+/* Contenedores de inputs en columnas */
 .columna {
-    display: inline-block;
-    width: 40%; 
-    margin-right: 2rem;   
+    display: inline-block;         /* Mostrados en línea */
+    width: 40%;                    /* Ancho del 40% */
+    margin-right: 2rem;            /* Espaciado derecho */
 }
+
+/* Estilo para todos los inputs */
 input{
-    height: 1.7rem;
-    margin-top: 2%;
-    margin-bottom: 0.5rem;
-    font-style: italic;
-    font-weight: 400;
-    background-color: #f2f2f2;
-    border: 1px solid #f2f2f2;
-    padding-left: 1rem;
-    transition: all 1s;
+    height: 1.7rem;                /* Altura fija */
+    margin-top: 2%;                /* Separación arriba */
+    margin-bottom: 0.5rem;         /* Separación abajo */
+    font-style: italic;            /* Texto en cursiva */
+    font-weight: 400;              /* Grosor medio */
+    background-color: #f2f2f2;     /* Fondo gris claro */
+    border: 1px solid #f2f2f2;     /* Borde gris claro */
+    padding-left: 1rem;            /* Espaciado interno izquierdo */
+    transition: all 1s;            /* Transiciones suaves */
 }
 
+/* Estilo cuando el input es válido y el mouse está encima */
 input:hover:valid{
-    border: 2px solid green; 
+    border: 2px solid green;       /* Borde verde */
     background-color: #f2f2f2;
 }
 
+/* Estilo cuando el input es inválido y el mouse está encima */
 input:hover:invalid{
-    border: 2px solid #dc3545;
-    background-color: #ffe6e6;
+    border: 2px solid #dc3545;     /* Borde rojo */
+    background-color: #ffe6e6;     /* Fondo rosado */
 }
 
+/* Asterisco rojo al final de cada label */
 label::after {
-    content: " *";
-    color: red;
-    font-weight: bold;
+    content: " *";                /* Contenido del asterisco */
+    color: red;                    /* Color rojo */
+    font-weight: bold;             /* Negrita */
 }
 
+/* Inputs dentro de columnas, más angostos */
 .columna input{
-    border-radius: 50px;
-    font-size: 11px;
-    color: #575857a9;
-    width: 9rem;
+    border-radius: 50px;           /* Bordes redondeados */
+    font-size: 11px;               /* Tamaño pequeño */
+    color: #575857a9;              /* Texto gris claro */
+    width: 9rem;                   /* Ancho fijo */
 }
 
+/* Inputs más largos que ocupan una fila */
 .fila input{
     border-radius: 50px;
     width: 20rem;
     font-size: 11px;
 }
 
+/* Fila contenedora de inputs largos */
 .fila{
     width: 70%; 
 }
 
+/* Botón de envío del formulario */
 .boton_book2{
-    background-color: var(--color);
-    color: white;
-    font-weight: 700;
-    font-size: 15px;
-    border: 1px solid var(--color);
-    border-radius: 50px;
-    margin-top: 1rem;
-    margin-left: 7.5rem;
-    width: 8rem;
-    height: 30px;
-    position: static;
+    background-color: var(--color); /* Fondo verde */
+    color: white;                /* Texto blanco */
+    font-weight: 700;              /* Negrita */
+    font-size: 15px;               /* Tamaño medio */
+    border: 1px solid var(--color);/* Borde verde */
+    border-radius: 50px;           /* Bordes redondeados */
+    margin-top: 1rem;              /* Separación superior */
+    margin-left: 7.5rem;           /* Separación izquierda */
+    width: 8rem;                   /* Ancho fijo */
+    height: 30px;                  /* Altura fija */
+    position: static;              /* Posición normal */
 }
